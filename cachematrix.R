@@ -22,9 +22,9 @@ cacheSolve <- function(x, ...) {
   if(!is.null(inv)){
     message("getting cached data")
     return(inv)
-    }
+  }
   matrix<- x$get()
   inv<- solve(matrix,...)
   x$setinverse(inv)
   inv ## Return a matrix that is the inverse of 'x'
-   }
+}
